@@ -72,7 +72,7 @@ function setStatNumber(){
       count1 += 1;
       statNumber1.textContent = "+" + count1;
 
-    }else if(count2 < 15){
+    }else if(count2 < 12){
       count2 += 1;
       statNumber2.textContent = "+" + count2;
     }else if(count3 < 10){

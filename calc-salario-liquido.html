@@ -13,7 +13,7 @@
     <script type="text/javascript" src="./scripts/scriptCalc.js" defer></script>
  
     
-    <title>Calculadora Salario</title>
+    <title>Calculadora de Salário Líquido 2026 | DevCount</title>
 </head>
 <body>
     <nav>
@@ -69,7 +69,7 @@
             <div class="wraper">
                 <div class="col-a">
                     <header>
-                        <h1>Calculadora de Salário Líquido 2023</h1><br>
+                        <h1>Calculadora de Salário Líquido 2026</h1><br>
                         <p>Quer saber quanto ganha livre de descontos?<br> Realize o cálculo exato do seu salário líquido com esse simulador!</p>
                     </header>
                 </div>
@@ -113,7 +113,7 @@
                         <h2>Como calcular</h2>
                         <ol>
                             <li>  Primeiro, preencha com o valor do seu salário bruto;</li>
-                            <li>  Em seguida, coloque o valor dos descontos como vales ou pensão, conforme está no seu holerite;</li>
+                            <li>  Em seguida, coloque outros descontos do seu holerite, como vale-transporte, plano de saúde ou empréstimo consignado;</li>
                             <li>  Para finalizar informe o número de dependentes e vá em “Calcular”.</li>
                         </ol>
                     </div>
@@ -123,7 +123,7 @@
 
         <section id="info-result" class="hiddenResult">
             <div class="wraper">
-                <h4>Salário líquido 2023</h4>
+                <h4>Salário líquido 2026</h4>
                 
                 <div class="table-result" >
                     <table>
@@ -174,13 +174,12 @@
                         </tbody>
                     </table>
                 </div>
+                <p id="nota-irrf"></p>
                 <p>
-                    Está atualizado com Tabela IRRF 2023 e com a Tabela INSS 2023 divulgada pela 
-                    previdência. 
-                    <a href="https://www.in.gov.br/web/dou/-/portaria-interministerial-mps/mf-n-26-de-10-de-janeiro-de-2023-457160869">
-                        PORTARIA INTERMINISTERIAL MPS/MF Nº 26, DE 10 DE JANEIRO DE 2023
-                    </a>
-                    - fonte: previdencia.gov.br
+                    Atualizado com a tabela do INSS 2026
+                    (<a href="https://www.gov.br/previdencia/pt-br/assuntos/rpps/documentos/PortariaInterministerialMPSMF13de9dejaneirode2026.pdf" target="_blank" rel="noopener">Portaria Interministerial MPS/MF nº 13, de 9 de janeiro de 2026</a>)
+                    e com a tabela do IRRF 2026, já com a redução da Lei nº 15.270/2025, que isenta quem ganha até R$ 5.000,00 por mês
+                    (<a href="https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/tabelas/2026" target="_blank" rel="noopener">fonte: Receita Federal</a>).
                 </p> 
             </div>
         </section>
@@ -191,8 +190,8 @@
                 <h2>Como funciona o cálculo</h2>
                 <div class="box-info">
                     <p class="p-info-calc">
-                        O salário bruto é o valor resultante de descontos, obrigatórios e opcionais,
-                            ou acréscimos como horas extras e adicionais de periculosidade e insalubridade. 
+                        O salário líquido é o que sobra do salário bruto depois dos descontos, obrigatórios e opcionais.
+                            O salário bruto já inclui acréscimos como horas extras e adicionais de periculosidade e insalubridade. 
                     </p>
                 </div>
                 <div class="box-info">
@@ -223,27 +222,27 @@
                                     <td class="cel-h-patern-table">Parcela a deduzir</td>          
                                 </tr>
                                 <tr>
-                                    <td class="cel1-patern-table">até R$ 1.212,00</td>
+                                    <td class="cel1-patern-table">até R$ 1.621,00</td>
                                     <td class="cel-patern-table">7,50</td>
                                     <td class="cel-patern-table">-</td>                     
                                 </tr>
                                 <tr>
-                                    <td class="cel1-patern-table">de R$ 1.212,01 até R$ 2.427,35</td>
+                                    <td class="cel1-patern-table">de R$ 1.621,01 até R$ 2.902,84</td>
                                     <td class="cel-patern-table">9,00</td>
-                                    <td class="cel-patern-table">R$ 18,18</td>                     
+                                    <td class="cel-patern-table">R$ 24,32</td>                     
                                 </tr>
                                 <tr>
-                                    <td class="cel1-patern-table">de R$ 2.427,36 até R$ 3.641,03</td>
+                                    <td class="cel1-patern-table">de R$ 2.902,85 até R$ 4.354,27</td>
                                     <td class="cel-patern-table">12,00</td>
-                                    <td class="cel-patern-table">R$ 91,00</td>                     
+                                    <td class="cel-patern-table">R$ 111,40</td>                     
                                 </tr>
                                 <tr>
-                                    <td class="cel1-patern-table">de R$ 3.641,04 até R$ 7.087,22</td>
+                                    <td class="cel1-patern-table">de R$ 4.354,28 até R$ 8.475,55</td>
                                     <td class="cel-patern-table">14,00</td>
-                                    <td class="cel-patern-table">R$ 163,82</td>                     
+                                    <td class="cel-patern-table">R$ 198,49</td>                     
                                 </tr>
                                 <tr>
-                                    <td colspan="3" class="celt-patern-table">O valor máximo do INSS do segurado empregado é R$ 7.087,22 (teto)</td>
+                                    <td colspan="3" class="celt-patern-table">O teto do salário de contribuição é R$ 8.475,55, e o desconto máximo do INSS do empregado é R$ 988,09</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -259,8 +258,9 @@
                     </p>
                     <h6> Tabela do imposto de renda retido na fonte (IRRF)</h6>
                     <p class="p-info-calc">
-                        Assim como o INSS, o IRRF é obrigatório. Ele, por sua vez, é calculado após o INSS e há um valor legal por dependente (R$189,59) que é deduzido do salário bruto.<br>
-                         Além disso, o IRRF varia de acordo com a faixa salarial. A diferença é que a base do cálculo é o salário bruto menos o desconto do INSS.
+                        Assim como o INSS, o IRRF é obrigatório. Ele é calculado depois do INSS: a base de cálculo é o salário bruto menos o INSS e R$ 189,59 por dependente.
+                         Quando for mais vantajoso, a empresa usa no lugar dessas deduções o desconto simplificado de R$ 607,20.<br>
+                         Sobre a base, aplica-se a tabela abaixo, que varia de acordo com a faixa salarial.
                          <br>
                     <p>
                     <div class="table-patern" >
@@ -272,33 +272,39 @@
                                     <td class="cel-h-patern-table">Parcela a deduzir</td>          
                                 </tr>
                                 <tr>
-                                    <td class="cel1-patern-table">Até R$ 1.903,98</td>
+                                    <td class="cel1-patern-table">Até R$ 2.428,80</td>
                                     <td class="cel-patern-table">Isento de imposto de renda</td>
                                     <td class="cel-patern-table">-</td>                     
                                 </tr>
                                 <tr>
-                                    <td class="cel1-patern-table">De R$1.903,99 até R$2.826,65</td>
+                                    <td class="cel1-patern-table">De R$ 2.428,81 até R$ 2.826,65</td>
                                     <td class="cel-patern-table">7,50</td>
-                                    <td class="cel-patern-table">R$ 142,80</td>                     
+                                    <td class="cel-patern-table">R$ 182,16</td>                     
                                 </tr>
                                 <tr>
-                                    <td class="cel1-patern-table">De 2.826,66 a R$ 3.751,05</td>
+                                    <td class="cel1-patern-table">De R$ 2.826,66 até R$ 3.751,05</td>
                                     <td class="cel-patern-table">15,00</td>
-                                    <td class="cel-patern-table">R$ 354,80</td>                     
+                                    <td class="cel-patern-table">R$ 394,16</td>                     
                                 </tr>
                                 <tr>
-                                    <td class="cel1-patern-table">De 3.751,06 a R$ 4.664,68</td>
+                                    <td class="cel1-patern-table">De R$ 3.751,06 até R$ 4.664,68</td>
                                     <td class="cel-patern-table">22,50</td>
-                                    <td class="cel-patern-table">R$ 636,13</td>                     
+                                    <td class="cel-patern-table">R$ 675,49</td>                     
                                 </tr>
                                 <tr>
                                     <td class="cel1-patern-table">Acima de R$ 4.664,68</td>
                                     <td class="cel-patern-table">27,50</td>
-                                    <td class="cel-patern-table">R$ 869,36</td>                     
+                                    <td class="cel-patern-table">R$ 908,73</td>                     
                                 </tr>
                             </tbody>
                         </table>
                     </div>
+                    <h6>Redução do imposto a partir de 2026</h6>
+                    <p class="p-info-calc">
+                        Desde janeiro de 2026, a Lei nº 15.270/2025 reduz o imposto calculado pela tabela, conforme o salário bruto:
+                        quem ganha até R$ 5.000,00 fica isento; de R$ 5.000,01 até R$ 7.350,00, a redução é de
+                        R$ 978,62 menos 13,3145% do salário bruto; acima de R$ 7.350,00, vale só a tabela.
+                    </p>
                 </div>
             </div>
         </section>

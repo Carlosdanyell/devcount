@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Ferramentas gratuitas — calculadoras trabalhistas, de impostos e finanças | DevCount</title>
+    <meta
+      name="description"
+      content="Calculadoras gratuitas atualizadas para 2026: salário líquido, férias, 13º, rescisão, horas extras, custo do funcionário, Simples Nacional, MEI, CLT × PJ, juros, financiamento e mais."
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="canonical" href="https://carlosdanyell.github.io/devcount/ferramentas.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="DevCount Contabilidade" />
+    <meta property="og:title" content="Ferramentas gratuitas | DevCount" />
+    <meta property="og:description" content="Simule salário, férias, rescisão, impostos do Simples, financiamentos e mais — atualizado com as tabelas de 2026." />
+    <meta property="og:url" content="https://carlosdanyell.github.io/devcount/ferramentas.html" />
+    <meta property="og:image" content="https://carlosdanyell.github.io/devcount/assets/img/ilustracao-calculo-612.webp" />
+
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="assets/favicon.ico" sizes="any" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..800&display=swap" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/tools.css" />
+
+    <script>
+      (function () {
+        var d = document.documentElement;
+        d.classList.add('js');
+        try {
+          var t = localStorage.getItem('dc-theme');
+          if (t === 'dark' || t === 'light') d.dataset.theme = t;
+        } catch (e) {}
+      })();
+    </script>
+    <script src="assets/js/site.js" defer></script>
+    <script src="assets/js/tools/calc-br.js" defer></script>
+    <script src="assets/js/tools/core.js" defer></script>
+    <script src="assets/js/tools/trabalhista.js" defer></script>
+    <script src="assets/js/tools/empresa.js" defer></script>
+    <script src="assets/js/tools/financas.js" defer></script>
+    <script src="assets/js/tools/utilidades.js" defer></script>
+  </head>
+
+  <body>
+    <script src="assets/js/icons.js"></script>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header" data-header>
+      <div class="container header-inner">
+        <a class="brand" href="./" aria-label="DevCount Contabilidade — início">
+          <svg class="brand-mark" aria-hidden="true"><use href="#brand-mark" /></svg>
+          <span class="brand-text" aria-hidden="true">
+            <span class="brand-name">Dev<span>Count</span></span>
+            <span class="brand-tag">Contabilidade</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Principal">
+          <ul class="nav-list" role="list">
+            <li><a href="./#servicos">Serviços</a></li>
+            <li><a href="./#como-funciona">Como funciona</a></li>
+            <li><a href="./#sobre">Sobre</a></li>
+            <li><a href="./#duvidas">Dúvidas</a></li>
+            <li><a href="ferramentas.html" aria-current="page">Ferramentas</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button class="icon-btn" type="button" data-open-palette aria-label="Buscar ferramenta (Ctrl + K)">
+            <svg class="icon" aria-hidden="true"><use href="#i-search" /></svg>
+          </button>
+          <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Alternar tema">
+            <svg class="icon i-moon" aria-hidden="true"><use href="#i-moon" /></svg>
+            <svg class="icon i-sun" aria-hidden="true"><use href="#i-sun" /></svg>
+          </button>
+          <a class="btn btn-primary btn-sm" href="./#contato">Fale com um contador</a>
+          <button class="icon-btn menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu-mobile" aria-label="Abrir menu">
+            <span class="menu-lines" aria-hidden="true"><span></span><span></span><span></span></span>
+          </button>
+        </div>
+      </div>
+      <div class="scroll-progress" aria-hidden="true"></div>
+    </header>
+
+    <div class="mobile-menu" id="menu-mobile" hidden>
+      <nav aria-label="Menu">
+        <ul role="list">
+          <li><a href="./#servicos">Serviços <svg class="icon" aria-hidden="true"><use href="#i-arrow-right" /></svg></a></li>
+          <li><a href="./#como-funciona">Como funciona <svg class="icon" aria-hidden="true"><use href="#i-arrow-right" /></svg></a></li>
+          <li><a href="./#sobre">Sobre <svg class="icon" aria-hidden="true"><use href="#i-arrow-right" /></svg></a></li>
+          <li><a href="./#duvidas">Dúvidas <svg class="icon" aria-hidden="true"><use href="#i-arrow-right" /></svg></a></li>
+          <li><a href="ferramentas.html">Ferramentas <svg class="icon" aria-hidden="true"><use href="#i-arrow-right" /></svg></a></li>
+          <li><a href="./#contato">Contato <svg class="icon" aria-hidden="true"><use href="#i-arrow-right" /></svg></a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu-foot">
+        <a class="btn btn-primary btn-lg btn-block" href="./#contato">Fale com um contador</a>
+        <div class="socials">
+          <a class="social" href="https://wa.me/5543999066623" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp" /></svg></a>
+          <a class="social" href="https://www.instagram.com/carlos_danyell_/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="#i-instagram" /></svg></a>
+          <a class="social" href="https://www.linkedin.com/in/carlosdanyell" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="#i-linkedin" /></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <main id="conteudo" class="tools-page" tabindex="-1">
+      <div data-app aria-live="off"></div>
+      <noscript>
+        <div class="container noscript">
+          <h1>Ferramentas DevCount</h1>
+          <p>As calculadoras rodam no seu navegador e precisam do JavaScript ativado.</p>
+        </div>
+      </noscript>
+    </main>
+
+    <!-- Busca rápida (Ctrl + K) -->
+    <dialog class="palette" data-palette aria-label="Buscar ferramenta">
+      <div class="palette-box">
+        <div class="palette-search">
+          <svg class="icon" aria-hidden="true"><use href="#i-search" /></svg>
+          <input
+            type="text"
+            data-palette-input
+            placeholder="Buscar ferramenta…"
+            autocomplete="off"
+            spellcheck="false"
+            role="combobox"
+            aria-expanded="true"
+            aria-controls="palette-list"
+            aria-autocomplete="list"
+            aria-label="Buscar ferramenta"
+          />
+          <kbd>Esc</kbd>
+        </div>
+        <ul class="palette-list" id="palette-list" role="listbox" data-palette-list aria-label="Ferramentas"></ul>
+        <div class="palette-foot" aria-hidden="true">
+          <span><kbd>↑</kbd><kbd>↓</kbd> navegar</span>
+          <span><kbd>Enter</kbd> abrir</span>
+          <span><kbd>Esc</kbd> fechar</span>
+        </div>
+      </div>
+    </dialog>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="./" aria-label="DevCount Contabilidade — início">
+            <svg class="brand-mark" aria-hidden="true"><use href="#brand-mark" /></svg>
+            <span class="brand-text" aria-hidden="true"><span class="brand-name">Dev<span>Count</span></span><span class="brand-tag">Contabilidade</span></span>
+          </a>
+          <p>As ferramentas são estimativas educativas. Para decisões importantes, fale com um dos nossos contadores.</p>
+          <div class="socials">
+            <a class="social" href="https://wa.me/5543999066623" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp" /></svg></a>
+            <a class="social" href="https://www.instagram.com/carlos_danyell_/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="#i-instagram" /></svg></a>
+            <a class="social" href="https://www.linkedin.com/in/carlosdanyell" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="#i-linkedin" /></svg></a>
+          </div>
+        </div>
+        <nav aria-label="Navegação do rodapé">
+          <h3>DevCount</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="./#servicos">Serviços</a></li>
+            <li><a href="./#como-funciona">Como funciona</a></li>
+            <li><a href="./#sobre">Sobre</a></li>
+            <li><a href="./#contato">Contato</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Ferramentas mais usadas">
+          <h3>Mais usadas</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="ferramentas.html?f=salario-liquido">Salário líquido</a></li>
+            <li><a href="ferramentas.html?f=rescisao">Rescisão</a></li>
+            <li><a href="ferramentas.html?f=simples-nacional">Simples Nacional</a></li>
+            <li><a href="ferramentas.html?f=clt-pj">CLT × PJ</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h3>Contato</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="https://wa.me/5543999066623" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp" /></svg>(43) 99906-6623</a></li>
+            <li><a href="mailto:carlosdanyellnsb@hotmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail" /></svg>E-mail</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span data-year>2026</span> DevCount. Todos os direitos reservados.</p>
+        <p>Desenvolvido por <a href="https://www.instagram.com/carlos_danyell_/" target="_blank" rel="noopener">@carlos_danyell_</a></p>
+      </div>
+    </footer>
+
+    <a class="to-top" href="#conteudo" data-to-top aria-label="Voltar ao topo">
+      <svg class="ring" viewBox="0 0 50 50" aria-hidden="true"><circle class="ring-track" cx="25" cy="25" r="23" /><circle class="ring-bar" cx="25" cy="25" r="23" /></svg>
+      <svg class="icon" aria-hidden="true"><use href="#i-arrow-up" /></svg>
+    </a>
+    <div class="toast-region" data-toasts aria-live="polite"></div>
+    <p class="visually-hidden" aria-live="polite" data-announcer></p>
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js" defer></script>
+    <script>
+      window.addEventListener('load', function () {
+        if (window.VLibras) new window.VLibras.Widget('https://vlibras.gov.br/app');
+      });
+    </script>
+  </body>
+</html>
